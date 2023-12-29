@@ -90,6 +90,12 @@ url("https://spacehey.com/createbulletin"), url("https://spacehey.com/advancedse
     border-radius: 0.5rem;
   }
 
+  .comments-table td,
+  .comments-table td:first-child,
+  .music-table td:first-child {
+    background: color-mix(in srgb, var(--primary-color) 10%, hsl(0, 0%, 0%));
+  }
+
   body {
     background: color-mix(in srgb, var(--primary-color) 10%, hsl(0, 0%, 0%));
 
@@ -291,9 +297,14 @@ url("https://spacehey.com/createbulletin"), url("https://spacehey.com/advancedse
       .groups-table th,
       .groups-table td,
       .bulletin-table th,
-      .bulletin-table td {
+      .bulletin-table td,
+      table {
         border: 1px solid
           color-mix(in srgb, var(--primary-color) 25%, hsl(0, 0%, 0%)) !important;
+      }
+
+      hr {
+        border: 1px solid var(--primary-color);
       }
 
       .heading {
